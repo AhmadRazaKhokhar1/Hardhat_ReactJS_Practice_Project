@@ -33,19 +33,26 @@ function App() {
       );
       try {
         // Call Greeter.greet() and display current greeting in `console`
-        /* 
-          function greet() public view returns (string memory) {
-            return greeting;
-          }
-        */
+        
+        console.log(Greeter.greet, (await contract.deployed( {Greeter}))._checkRunningEvents())
+        //testing function
+      
+        // function greet() {
+        //   return setCurrentGreeting(data);
+        // }
+
         const data = await contract.greet();
         console.log("data: ", data);
         setCurrentGreeting(data);
+        
+        // greet()
       } catch (error) {
         console.log("Error: ", error);
       }
     }
   }
+
+
 
   // Sets the greeting from input text box
   async function setGreeting() {
