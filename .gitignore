@@ -13,7 +13,6 @@
 
 # misc
 .DS_Store
-.env.local
 .env.development.local
 .env.test.local
 .env.production.local
@@ -23,7 +22,6 @@ yarn-debug.log*
 yarn-error.log*
 
 node_modules
-.env
 coverage
 coverage.json
 typechain
@@ -31,3 +29,8 @@ typechain
 #Hardhat files
 cache
 artifacts
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
+branch_structure.json
+config.bat
